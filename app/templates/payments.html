@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>	First flask app </title>
+</head>
+<body>
+<h1>Payment Method</h1>
+<p> {{error}} </p>
+<label for="method-select">Choose a Payment Method:</label>
+
+<select name="payment" id="method-select">
+    <option value="">--Please choose an option--</option>
+    <option value="Card">Card</option>
+    <option value="Cash">Cash</option>
+
+</select>
+<form action="/login" method="POST">
+	<p>Card Number: <input type="text" name="email"></p>
+	<p>Expiry Date: <input type="text" name="email"></p>
+	<p>Billing Address: <input type="password" name="password"></p>
+	<p>ORM Number: <input type="password" name="password"></p>
+
+	<a href="/confirm">Confirm Order</a>
+</form>
+
+</body>
+</html>
